@@ -16,25 +16,8 @@
 */
 
 import QtQuick 1.1
-import com.nokia.meego 1.0
 
-PageStackWindow {
-    id: rootWindow
-    initialPage: MainPage { }
-    showStatusBar: false
-
-     // These tools are shared by most sub-pages by assigning the
-     // id to a page's tools property
-     ToolBarLayout {
-         id: commonTools
-         visible: false
-         ToolIcon {
-             iconId: "toolbar-back";
-             onClicked: { myMenu.close(); pageStack.pop(); }
-         }
-         ToolIcon {
-             iconId: "toolbar-view-menu";
-             onClicked: (myMenu.status == DialogStatus.Closed) ? myMenu.open() : myMenu.close()
-         }
-     }
+Text {
+    font.family: "Nokia Pure Text"
+    font.pointSize: 22
 }
